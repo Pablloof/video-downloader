@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <title>Video Downloader</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <header class="brand">
+      <div class="brand-mark">▶</div>
+      <div>
+        <div class="brand-name">VIDEO<span>DOWNLOADER</span></div>
+        <div class="brand-sub">SEU VÍDEO, EM POUCOS CLIQUES</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">INSTAGRAM <i></i> YOUTUBE</div>
+      <h1>Baixe seus vídeos<br><span>com facilidade.</span></h1>
+      <p class="intro">Cole um link público e compatível para preparar o arquivo na melhor qualidade disponibilizada pela plataforma.</p>
+
+      <div class="download-card">
+        <label for="videoUrl">LINK DO VÍDEO</label>
+        <div class="input-wrap">
+          <span class="link-icon">↗</span>
+          <input id="videoUrl" type="url" placeholder="Cole aqui o link do Instagram ou YouTube" autocomplete="off">
+          <button id="clearBtn" class="clear" type="button" aria-label="Limpar">×</button>
+        </div>
+        <div class="settings-row">
+          <span class="platform" id="platform">Aguardando link...</span>
+          <label class="auto-label"><input id="autoDownload" type="checkbox" checked> Baixar automaticamente ao colar</label>
+        </div>
+        <button id="downloadBtn" class="download-btn" type="button">
+          <span>BAIXAR VÍDEO</span><b>↓</b>
+        </button>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+      </div>
+
+      <div class="features">
+        <div><b>HD</b><span>Melhor qualidade<br>disponível</span></div>
+        <div><b>MP4</b><span>Formato de vídeo<br>compatível</span></div>
+        <div><b>1 CLIQUE</b><span>Processo simples<br>e rápido</span></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Use somente vídeos que você tenha direito ou autorização para baixar. A disponibilidade depende das regras e dos recursos de cada plataforma.</p>
+      <small>VIDEO DOWNLOADER · FERRAMENTA DE USO PESSOAL</small>
+    </footer>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

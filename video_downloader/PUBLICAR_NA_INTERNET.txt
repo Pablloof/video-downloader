@@ -1,0 +1,30 @@
+PUBLICAR O VIDEO DOWNLOADER NA INTERNET
+=======================================
+
+Esta pasta contém uma versão preparada para hospedagem com Docker.
+
+CAMINHO SUGERIDO (Render + GitHub)
+1. Crie uma conta no GitHub e outra no Render.
+2. Crie um repositório NOVO no GitHub e envie todos os arquivos desta pasta.
+3. No Render, escolha New > Blueprint (ou Web Service com Docker).
+4. Conecte o repositório do GitHub.
+5. Se usar Blueprint, o Render identificará o arquivo render.yaml.
+6. Confirme a criação e aguarde o deploy.
+7. O Render fornecerá um endereço público HTTPS para abrir no celular.
+
+IMPORTANTE
+- Hospedagem pública pode ter custos. O arquivo render.yaml usa o plano
+  Starter para evitar depender de um serviço gratuito que pode suspender
+  ou limitar o processamento. Confira os preços atuais antes de confirmar.
+- O processamento de vídeo consome CPU, memória e tráfego. Defina limites
+  de uso e monitore os custos.
+- Antes de divulgar publicamente, configure proteção contra abuso,
+  limites de tamanho/duração, rate limiting, autenticação se necessário,
+  política de privacidade e retenção curta dos arquivos temporários.
+- O serviço não remove marcas-d'água, nomes ou créditos originais e não
+  contorna login, DRM, paywalls ou outras proteções das plataformas.
+- Só baixe/publicize conteúdo que você tenha direito ou autorização para usar.
+
+DOMÍNIO PERSONALIZADO
+Depois de publicar, você pode conectar um domínio comprado por você
+nas configurações de Custom Domains do provedor de hospedagem.
